@@ -4,13 +4,75 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/css/minified.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Train ticket</title>
 </head>
-<body>
+<body class="bg-teal">
   
-  <div id="container" class="container"></div>
+  <header>
+    <div class="topnav">
+      <div class="container">
+          <a href="#"><img class="img-respo va-middle logo-top" src="./assets/img/treno.png" alt="disegno treno"></a>
+          <div id="myLinks" class="text-right d-none">
+              <ul>
+                  <li class="px-3"><a href="#">Acquista</a></li>
+                  <li class="px-3"><a href="#">Area riservata</a></li>
+                  <li class="px-3"><a href="#">Supporto</a></li>
+                  <li class="px-3"><a href="#">Stato treno</a></li>
+                  <li class="px-3"><a href="#">Offerte e servizi</a></li>
+              </ul>
+              <div class="sign-in d-flex jc-end mr-2">
+                  <a class="bg-white radio-pill" href="#">Accedi</a>
+              </div>  
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars fs-6"></i>
+          </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container bg-white mb-4">
+    <div class="container py-2">
+      <div class="sales row jc-between ai-center bg-darkteal text-white p-2">
+        <h2 class="fs-6">Under 18</h2>
+        <span class="fs-8 fw-bold">- 20&#37;</span>
+        <a class="col-12 text-white" href="#"><span class="fs-2 text-underline col-12">Maggiori informazioni</span></a>
+      </div>
+      <div class="sales row jc-between ai-center bg-darkteal text-white p-2 mt-1">
+        <h2 class="fs-6">Over 65</h2>
+        <span class="fs-8 fw-bold">- 40&#37;</span>
+        <a class="col-12 text-white" href="#"><span class="fs-2 text-underline">Maggiori informazioni</span></a>
+      </div>
+      <div class="py-3">
+        <div class="d-flex ai-center jc-around">
+          <div class="d-flex ai-center">
+            <h2 class="fs-6">Tariffa base</h2>
+            <i class="fa-solid fa-arrow-right-long mx-2"></i>
+            <span class="fs-4">0,21 centesimi per chilometro</span>
+          </div>
+        </div>
+      </div>
+      <div class="row p-1">
+        <div class="d-flex ai-center mx-1">
+          <h3>Km:</h3>
+          <span id="km" class="mx-1"></span>
+        </div>
+        <div class="d-flex ai-center">
+          <h3>Et&agrave;:</h3>
+          <span id="eta" class="mx-1"></span>
+        </div>
+      </div>
+      <div class="row text-center price p-1 mx-2">
+        <h2 class="col-12 mb-1">Preventivo</h2>
+        <span id="price" class="fw-bold fs-6 col-12"></span>
+      </div>
+    </div>
+    <div id="price"></div>
+  </main>
 
   <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>

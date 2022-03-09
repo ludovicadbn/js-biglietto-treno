@@ -1,0 +1,35 @@
+*{font-family: sans-serif;}
+
+header{height: 8vh;}
+main{height: 92vh;}
+
+.logo-top{max-width: 10%;}
+
+.bg-teal{background-color: #3cac92;}
+.bg-white{background-color: #fff;}
+.bg-darkteal{background-color: #135848;}
+
+.topnav {overflow: hidden; background-color: #3cac92; position: relative;}
+.topnav a {color: white; font-weight: bold; margin: 0.8em; display: block;}
+.topnav .sign-in a{color: #000; padding: .35rem .7rem;}
+
+.topnav a.icon {
+    background: #3cac92;
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 0;
+}
+
+main,
+.sales{border-radius: 15px;}
+
+.price,
+#km,
+#eta{border: 1px solid #000;}
+
+#km,
+#eta{padding: 0.3em;}
+
+
+
