@@ -9,8 +9,18 @@ function myFunction() {
 } 
 
 // costo biglietto
-const km = prompt("Quanti chilometri vuoi percorrere?")
-const userAge = prompt("Inserisci la tua età")
+let km = Number(prompt("Quanti chilometri vuoi percorrere?"))
+while (Number.isNaN(km)){
+  alert("Inserisci un numero per i chilometri!")
+  km = Number(prompt("Quanti chilometri vuoi percorrere?"))
+}
+
+let userAge = Number(prompt("Inserisci la tua età"))
+while (Number.isNaN(userAge)){
+  alert("Inserisci un numero per la tua età!")
+  userAge = Number(prompt("Inserisci la tua età"))
+}
+
 let kmPrice = 0.21 * km
 
 if (userAge < 18) {
