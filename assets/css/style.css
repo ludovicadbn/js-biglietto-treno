@@ -31,5 +31,29 @@ main,
 #km,
 #eta{padding: 0.3em;}
 
+/* small */
+@media screen and (min-width: 36em) {
+    .logo-top{max-width: 8%;}
+}
+
+/* medium */
+@media screen and (min-width: 48em) {
+    header{height: 10vh;}
+    main{height: 90vh;}
+}
+
+/* large */
+@media screen and (min-width: 62em) {
+    header{height: 10vh;}
+    main{height: 90vh;}
+}
+
+/* xl */
+@media screen and (min-width: 75em) {
+    header{height: 10vh;}
+    main{height: 90vh;}
+    .logo-top{max-width: 5%;}
+}
+
 
 
